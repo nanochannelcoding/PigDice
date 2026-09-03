@@ -42,6 +42,7 @@ void play_game(GameState &mg) {
     std::cout << "\nThanks for playing Pig Dice!" << std::endl;
 }
 
+
 void display_rules(GameState &mg) {
     std::cout << "Let's Play PIG Dice!" << std::endl;
     std::cout << std::endl;
