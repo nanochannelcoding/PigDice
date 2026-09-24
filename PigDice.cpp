@@ -26,6 +26,9 @@ void set_numOfSides(int sides) {
     if (sides == 2 || sides == 4 || sides == 6 || sides == 8 || sides == 12) {
         m_numOfSides = sides;
     }
+    else {
+        m_numOfSides = 6;
+    }
 }
 
 int get_numOfSides() {
