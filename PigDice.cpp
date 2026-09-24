@@ -7,12 +7,11 @@ class Die {
 private:
     int m_numOfSides;
     int m_dieValue;
-
 public:
 Die() {
-    m_numOfSides = 6;
-    m_dieValue = 1;
-    }
+        m_numOfSides = 6;
+        m_dieValue = 1;
+      }
 
 void set_dieValue(int value) {
     m_dieValue = value;
