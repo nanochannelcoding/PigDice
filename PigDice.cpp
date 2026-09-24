@@ -110,8 +110,9 @@ void take_turn(GameState &mg) {
     }
 }
 
-Die my_die;
+
 void roll_turn(GameState &mg) {
+    Die my_die;
     my_die.roll();
     int roll = my_die.get_dieValue();
     std::cout << "You rolled a " << roll << std::endl;
