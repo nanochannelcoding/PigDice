@@ -1,6 +1,47 @@
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
+#include <random>
+
+class Die {
+private:
+    int m_numOfSides;
+    int m_dieValue;
+
+public:
+Die() {
+    m_numOfSides = 6;
+    m_dieValue = 1;
+    }
+
+void set_dieValue(int value) {
+    m_dieValue = value;
+}
+
+int get_dieValue() {
+    return m_dieValue;
+}
+
+void set_numOfSides(int sides) {
+    if (sides == 2 || sides == 4 || sides == 6 ||
+    sides == 8 || sides == 12) {
+    m_numOfSides = sides;
+    }
+}
+
+int get_numOfSides() {
+    return m_numOfSides;
+}
+
+void roll() {
+    static std::random_device rd;
+    static std::mt19937 generator(rd());
+
+    std::uniform_int_distribution<int> distribution(1, m_numOfSides);
+
+    m_dieValue = distribution(generator);
+    }
+};
 
 struct GameState {
     char choice;
@@ -18,9 +59,9 @@ void roll_turn(GameState &mg);
 void hold_turn(GameState &mg);
 
 int main() {
-    GameState my_game; // instantiate a GameState object
-    display_rules(my_game); // call the display_rules function
-    play_game(my_game); // call the play_game function and pass the GameState object
+    GameState my_game;
+    display_rules(my_game);
+    play_game(my_game);
     return 0;
 }
 
@@ -41,7 +82,6 @@ void play_game(GameState &mg) {
     << mg.game_score << " in " << mg.turn_count << " turns!";
     std::cout << "\nThanks for playing Pig Dice!" << std::endl;
 }
-
 
 void display_rules(GameState &mg) {
     std::cout << "Let's Play PIG Dice!" << std::endl;
@@ -69,24 +109,26 @@ void take_turn(GameState &mg) {
             std::cout << "Please enter a valid choice." << std::endl;
         }
     }
-    std::cout << "\nScore Banked This Turn: " << mg.score_this_turn
-    << std::endl << std::endl;
 }
+
+Die my_die;
+
 void roll_turn(GameState &mg) {
-    srand(time(NULL));
-    int die = rand() % 6 + 1;
-    std::cout << "Die: " << die;
-    if (die == 1) {
-        std::cout << "\nTurn over. No score.";
+my_die.roll();
+
+int roll = my_die.get_dieValue();
+
+std::cout << "You rolled a " << roll << std::endl;
+
+    if (roll == 1) {
         mg.score_this_turn = 0;
         mg.turn_over = true;
     }
     else {
-        mg.score_this_turn = mg.score_this_turn + die;
-        std::cout << " - Running score this turn: " << mg.score_this_turn;
+        mg.score_this_turn += roll;
     }
 }
+
 void hold_turn(GameState &mg) {
     mg.turn_over = true;
 }
-
