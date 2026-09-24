@@ -23,9 +23,8 @@ int get_dieValue() {
 }
 
 void set_numOfSides(int sides) {
-    if (sides == 2 || sides == 4 || sides == 6 ||
-    sides == 8 || sides == 12) {
-    m_numOfSides = sides;
+    if (sides == 2 || sides == 4 || sides == 6 || sides == 8 || sides == 12) {
+        m_numOfSides = sides;
     }
 }
 
@@ -36,9 +35,7 @@ int get_numOfSides() {
 void roll() {
     static std::random_device rd;
     static std::mt19937 generator(rd());
-
     std::uniform_int_distribution<int> distribution(1, m_numOfSides);
-
     m_dieValue = distribution(generator);
     }
 };
@@ -112,14 +109,10 @@ void take_turn(GameState &mg) {
 }
 
 Die my_die;
-
 void roll_turn(GameState &mg) {
     my_die.roll();
-
     int roll = my_die.get_dieValue();
-
     std::cout << "You rolled a " << roll << std::endl;
-
     if (roll == 1) {
         mg.score_this_turn = 0;
         mg.turn_over = true;
