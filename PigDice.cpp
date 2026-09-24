@@ -117,6 +117,7 @@ void roll_turn(GameState &mg) {
     int roll = my_die.get_dieValue();
     std::cout << "You rolled a " << roll << std::endl;
     if (roll == 1) {
+        std::cout << "\nTurn over. No score.\n";
         mg.score_this_turn = 0;
         mg.turn_over = true;
     }
