@@ -110,7 +110,6 @@ void take_turn(GameState &mg) {
     }
 }
 
-
 void roll_turn(GameState &mg) {
     Die my_die;
     my_die.roll();
