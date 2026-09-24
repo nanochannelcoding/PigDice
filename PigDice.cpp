@@ -8,18 +8,18 @@ private:
     int m_numOfSides;
     int m_dieValue;
 public:
-Die() {
+    Die() {
         m_numOfSides = 6;
         m_dieValue = 1;
-      }
+    }
 
-void set_dieValue(int value) {
-    m_dieValue = value;
-}
+    void set_dieValue(int value) {
+        m_dieValue = value;
+    }
 
-int get_dieValue() {
-    return m_dieValue;
-}
+    int get_dieValue() {
+        return m_dieValue;
+    }
 
 void set_numOfSides(int sides) {
     if (sides == 2 || sides == 4 || sides == 6 || sides == 8 || sides == 12) {
