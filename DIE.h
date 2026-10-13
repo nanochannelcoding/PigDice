@@ -14,4 +14,5 @@ public:
     void roll();
 };
 
+
 #endif //PIGDICE_DIE_H

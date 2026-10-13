@@ -15,5 +15,4 @@ private:
     void playGame();
 };
 
-
 #endif //PIGDICE_PDGAME_H
