@@ -6,4 +6,9 @@ set(CMAKE_CXX_STANDARD 14)
 add_executable(PigDice
         PigDice.cpp
         DIE.cpp
-        DIE.h)
+        DIE.h
+        Turn.cpp
+        Turn.h
+        PDGame.cpp
+        PDGame.h
+        PDGame.cpp)
