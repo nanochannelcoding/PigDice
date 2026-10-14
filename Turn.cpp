@@ -13,16 +13,19 @@ void Turn::setParentGame(PDGame* parentGame) { // 6
 }
 
 void Turn::takeTurn() {
+    m_turnCount++;
     std::cout << "TURN " << m_turnCount;
     std::cout << " - Game Score: " << m_parentGame->getGameScore(); // 9
+    std::cout << std::endl;
     while (m_turnOver == false) {
-        std::cout << "\nroll or hold? (r/h): ";
+        std::cout << "roll or hold? (r/h): ";
         std::cin >> m_choice;
         if (m_choice == 'r') {
             roll();
         }
         else if (m_choice == 'h') {
-            std::cout << "Score banked this turn: " << m_scoreThisTurn << std::endl << std::endl;
+            std::cout << "Score banked this turn: " << m_scoreThisTurn << std::endl;
+            std::cout << std::endl;
             m_turnOver = true;
         }
         else {
