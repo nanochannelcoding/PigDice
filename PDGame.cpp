@@ -30,7 +30,9 @@ void PDGame::playGame() {
         else {
             m_myTurn.resetTurnOver();
             m_myTurn.resetScoreThisTurn();
-            m_myTurn.getTurnCount == m_myTurn.getTurnCount + 1;
+            m_myTurn.turnCount = m_myTurn.turnCount + 1;
         }
     }
+    std::cout << "You finished with a score of" << m_gameScore << " in" << m_myTurn.getTurnCount() << " turns." << std::endl;
+    std::cout << "Thanks for playing Pig Dice!" << std::endl;
 }
