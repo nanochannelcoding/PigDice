@@ -1,4 +1,3 @@
-#include <iomanip>
 #include "PDGame.h"
 #include <iostream>
 
@@ -23,15 +22,15 @@ void PDGame::displayRules() {
 }
 void PDGame::playGame() {
     while (m_gameOver == false) {
-        m_myTurn();
+        m_myTurn.takeTurn();
         m_gameScore+=m_myTurn.getScoreThisTurn();
         if (m_gameScore >= 20) {
             m_gameOver= true;
         }
         else {
-            m_myTurn.resetTurnOver = false;
-            m_myTurn.resetScoreThisTurn;
-            m_myTurn.turnCount = m_myTurn.turnCount + 1;
+            m_myTurn.resetTurnOver();
+            m_myTurn.resetScoreThisTurn();
+            m_myTurn.getTurnCount == m_myTurn.getTurnCount + 1;
         }
     }
 }

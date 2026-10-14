@@ -44,6 +44,7 @@ void Turn::resetScoreThisTurn() {
 }
 void Turn::roll() {
     m_myDie.roll();
+    int roll = m_myDie.get_dieValue;
     std::cout << "You rolled a " << roll << std::endl;
     if (roll == 1) {
         std::cout << "\nTurn over. No score.\n";

@@ -26,14 +26,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88f35873-12f8-4078-bbaa-b0c56e67cd36" name="Changes" comment="Misc. Assignment 2">
-      <change afterPath="$PROJECT_DIR$/PDGame.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PDGame.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Turn.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Turn.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PigDice.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/PigDice.cpp" afterDir="false" />
+    <list default="true" id="88f35873-12f8-4078-bbaa-b0c56e67cd36" name="Changes" comment="Fixing">
+      <change beforePath="$PROJECT_DIR$/PDGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/PDGame.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Turn.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Turn.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +112,7 @@
       <workItem from="1790703892106" duration="8253000" />
       <workItem from="1791308936272" duration="258000" />
       <workItem from="1791476994385" duration="2327000" />
-      <workItem from="1791479347124" duration="9279000" />
+      <workItem from="1791479347124" duration="10087000" />
     </task>
     <task id="LOCAL-00001" summary="Misc. Assignment 2">
       <option name="closed" value="true" />
@@ -127,7 +122,23 @@
       <option name="project" value="LOCAL" />
       <updated>1790704794309</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Misc. Assignment 2">
+      <option name="closed" value="true" />
+      <created>1791935356076</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1791935356076</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixing">
+      <option name="closed" value="true" />
+      <created>1791935439172</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1791935439172</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +151,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Misc. Assignment 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Misc. Assignment 2" />
+    <MESSAGE value="Fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing" />
   </component>
 </project>
