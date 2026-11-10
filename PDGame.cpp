@@ -2,11 +2,11 @@
 #include <iostream>
 
 PDGame::PDGame() {
-    bool m_gameOver = false;
-    int m_gameScore = 0;
-    m_myTurn.setParentGame(this); // 7
-    displayRules();
-    playGame();
+//    bool m_gameOver = false;
+//    int m_gameScore = 0;
+//    m_myTurn.setParentGame(this); // 7
+//    displayRules();
+//    playGame();
 }
 int PDGame::getGameScore() { // 2
     return m_gameScore;

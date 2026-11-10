@@ -11,4 +11,6 @@ add_executable(PigDice
         Turn.h
         PDGame.cpp
         PDGame.h
-        PDGame.cpp)
+        PDGame.cpp
+        PDGameV2.h
+        MultiPlayer.h)
