@@ -26,13 +26,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88f35873-12f8-4078-bbaa-b0c56e67cd36" name="Changes" comment="Pig Dice 2 finished game">
-      <change afterPath="$PROJECT_DIR$/MultiPlayer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PDGameV2.h" afterDir="false" />
+    <list default="true" id="88f35873-12f8-4078-bbaa-b0c56e67cd36" name="Changes" comment="Pig Dice MP finished game">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PDGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/PDGame.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PigDice.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/PigDice.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MultiPlayer.h" beforeDir="false" afterPath="$PROJECT_DIR$/MultiPlayer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDGameV2.h" beforeDir="false" afterPath="$PROJECT_DIR$/PDGameV2.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +55,11 @@
     &quot;accountId&quot;: &quot;79fc187d-3ca0-4b7c-baaa-41f8887a2ee0&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
     <option name="majorVersion" value="2025" />
@@ -95,11 +97,6 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PigDice" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PigDice" TARGET_NAME="PigDice" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PigDice" RUN_TARGET_NAME="PigDice">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -117,7 +114,9 @@
       <workItem from="1791308936272" duration="258000" />
       <workItem from="1791476994385" duration="2327000" />
       <workItem from="1791479347124" duration="13929000" />
-      <workItem from="1793900148266" duration="4684000" />
+      <workItem from="1793900148266" duration="4989000" />
+      <workItem from="1794505951375" duration="79000" />
+      <workItem from="1794528708351" duration="1167000" />
     </task>
     <task id="LOCAL-00001" summary="Misc. Assignment 2">
       <option name="closed" value="true" />
@@ -167,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791938076512</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Pig Dice MP finished game">
+      <option name="closed" value="true" />
+      <created>1794331858711</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1794331858711</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +189,7 @@
     <MESSAGE value="Misc. Assignment 2" />
     <MESSAGE value="Fixing" />
     <MESSAGE value="Pig Dice 2 finished game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pig Dice 2 finished game" />
+    <MESSAGE value="Pig Dice MP finished game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pig Dice MP finished game" />
   </component>
 </project>

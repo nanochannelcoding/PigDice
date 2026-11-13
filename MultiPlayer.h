@@ -38,13 +38,25 @@ public:
     MultiPlayer(const std::string& unused = ""):
     m_gameOver(false) {
         int numberOfPlayers;
-        std::cout << "How many people are playing? ";
-        std::cin >> numberOfPlayers;
-        while (numberOfPlayers < 2) {
-            std::cout << "Please enter at least 2 players: ";
-            std::cin >> numberOfPlayers;
+        while (1) {
+            try {
+                std::cout << "How many people are playing? ";
+                std::cin >> numberOfPlayers;
+                if (std::cin.fail()) {
+                    throw 101;
+                }
+                if (numberOfPlayers < 2) {
+                    std::cout << "Please enter at least 2 players: ";
+                    std::cin >> numberOfPlayers;
+                }
+                break;
+            }
+            catch (int e) {
+                std::cin.clear();
+                std::cin.ignore(10000, '\n');
+                std::cout << "Please enter an integer next time! Error " << e << std::endl;
+            }
         }
-        std::cin.ignore(10000, '\n');
         for (int i = 0; i < numberOfPlayers; i++) {
             std::string playerName;
             std::cout << "Enter player " << i + 1 << "'s name: ";

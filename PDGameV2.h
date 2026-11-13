@@ -44,6 +44,7 @@ public:
         while (!turnOver) {
             std::cout << "roll or hold? (r/h): ";
             std::cin >> choice;
+            std::cin.ignore(10000, '\n');
             if (choice == 'r' || choice == 'R') {
                 m_myDie.roll();
                 int dieValue = m_myDie.get_dieValue();
